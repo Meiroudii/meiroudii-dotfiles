@@ -1,0 +1,10 @@
+[user]
+	name = Meiroudii
+	mail = joelllena123@gmail.com
+  email = 119019700+Meiroudii@users.noreply.github.com
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[pull]
+	rebase = false
