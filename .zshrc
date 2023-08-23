@@ -110,6 +110,7 @@ source $ZSH/oh-my-zsh.sh
 alias vim=nvim
 alias vimz="vim $HOME/.zshrc"
 alias ls="lsd -lh --icon never"
+alias pysr="python manage.py runserver"
 export PATH=$PATH:$HOME/bin
 
 # Lazy alias series
