@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#echo -n "You still want to run OSU!, yet you still have few mission left? (y/N)"
+#read confirm
+
+
+read -p "You still want to run OSU!, yet you still have few mission left? (y/N)" answer
+
+if [[ $answer =~ ^(y|yes|Y|ja ) ]]; then
+    echo "[melody] Launching OSU!... wait for a moment"
+    sleep 1
+    ~/opt/osu.AppImage&
+else
+    echo "Go and study, come back later if you're finish"
+    sleep 2
+    echo "This is you punishment"
+    sleep 1
+    read -p "[sudo] password for meiroudii: " password
+    if [[ $password =~ ^(1234) ]]; then
+        echo "You fool!"
+        sleep 3
+    else
+        echo "[sudo] Wrong password dude!"
+        sleep 5
+        cowsay -f dragon "GOOO!! AND FINSIH YOUR MESS"
+    fi
+fi
+
+

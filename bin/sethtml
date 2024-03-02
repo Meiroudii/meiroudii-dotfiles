@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cat $HOME/bin/assets/html.sh/template | xclip -selection c
+echo $?

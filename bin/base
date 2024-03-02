@@ -1,0 +1,10 @@
+#!/bin/bash
+
+fle="base.html"
+
+touch ./base.html
+
+cat $HOME/bin/assets/html.sh/template > $(pwd)/base.html
+echo $?
+echo "[ ######################################### ]"
+echo "[Melody] Process finished"
