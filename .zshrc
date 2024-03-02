@@ -28,7 +28,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+ HYPHEN_INSENSITIVE="true"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
@@ -48,7 +48,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -111,14 +111,33 @@ alias vim=nvim
 alias vimz="vim $HOME/.zshrc"
 alias ls="lsd -lh --icon never"
 alias pysr="python manage.py runserver"
+alias aa="clear && neofetch"
+alias strg="sudo du -h --max-depth=1"
+alias pym="python manage.py"
 export PATH=$PATH:$HOME/bin
 
 # Lazy alias series
-alias asdf="xdg-open"
+alias asdf="exit"
 alias asdfj="sudo halt -p"
 alias asdfa="exit"
-alias asdff="nvim"
-
+alias xc="xclip -selection c"
+alias zxc="source ~/Developments/meiroudii/projects/sec-projects/pykeyloggr/env/bin/activate && python ~/Developments/meiroudii/projects/sec-projects/pykeyloggr/keylogger.py"
+alias zxcv="cat ~/Developments/meiroudii/projects/sec-projects/pykeyloggr/keyfile.txt"
+alias gya="viewnior $HOME/Pictures/&"
+alias tb="nc termbin.com 9999"
+alias htbstart="cd /home/meiroudii/Documents/synced-docs/meiroudii-second-brain/mnieroudeu-notes/mnieroudeu-hacking-notes/"
+alias appu="yes | sudo pacman -Syyu && yes | yay -Syu"
+alias packettracer="/opt/pt/packettracer"
+alias a="lsd"
+alias startpoint="sudo openvpn --config ~/Documents/synced-docs/ovpn/starting_point_mnieroudeu.ovpn"
+alias htbvpn="sudo openvpn --config ~/Documents/synced-docs/ovpn/lab_mnieroudeu.ovpn"
+alias torS="sudo systemctl start tor.service"
+alias paclist="pacman -Qe"
+alias vi3="vim ~/.config/i3/config"
+alias wifi="sudo nmcli --ask dev wifi connect sudo\ airmon-ng\ start\ wlan0"
+alias ddlc="/media/backup/Games/source_games_zips/DDLC-1.1.1-pc/DDLC.sh"
+alias ddlcbs="/media/backup/Games/source_games_zips/DDLCBS/DDLC.sh"
+alias pt="/opt/pt/packettracer"
 # Startup commands
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
