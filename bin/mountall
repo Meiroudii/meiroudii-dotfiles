@@ -1,32 +1,13 @@
 #!/bin/bash
 
-backupdir () {
-    cd /media/backup/
-}
-
-llmdev () {
-    cd /media/llmdev/
-}
-
 sudo mount /dev/sda1 /media/backup
 sudo mount /dev/sda2 /media/llmdev
 echo "Mounted successfully!"
 echo $?
 
-echo "Do you want to go to the disks? (y/N)"
+echo "Do you want to start mariadb? y/n"
 read yn
 if [ $yn == "y" ]; then
-    echo "Choose which disk"
-    echo "[1] /media/backup"
-    echo "[2] /media/llmdev"
-    echo ">"
-    read ot
-    if [ $ot == "1" ]; then
-        backupdir
-        ls -la
-    fi
-    if [ $ot == "2" ]; then
-        llmdev
-        ls -la
-    fi
+    sudo systemctl start mariadb.service
 fi
+

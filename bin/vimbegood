@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "VIM BE GOOD"
+sudo docker run -it --rm brandoncc/vim-be-good:stable
+
